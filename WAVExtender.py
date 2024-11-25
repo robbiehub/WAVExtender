@@ -141,7 +141,7 @@ class WAVFile():
                 extension = os.path.basename(self.output_path).split(".")[-1]
                 if extension.lower() != "wav":
                     print(f"Converting to {extension}...")
-                    self.conver()
+                    self.convert()
                     os.remove(temp_path)
                 else:
                     os.rename(temp_path, self.output_path)
